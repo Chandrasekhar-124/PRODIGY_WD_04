@@ -1,0 +1,183 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+    background: url('../images/image.png') no-repeat center center/cover;
+    color: #d8cece;
+}
+
+/* Header styling */
+header {
+    background: #de7a08;
+    color: white;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav li {
+    margin: 0 1.5rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #47fcff;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 8rem 1rem;
+    background: url('../images/image1.png') no-repeat center center/cover;
+    color: rgb(227, 222, 222);
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero .content {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color:#fcff47;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+/* About section */
+.about, .projects, .contact {
+    padding: 12rem 0rem;
+    text-align: center;
+   
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about h1,.about h2, .projects h1, .contact h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color:#fcff47;
+}
+
+.about p, .projects p, .contact p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    
+}
+
+/* Projects section */
+.project {
+    margin-bottom: 2rem;
+}
+
+.project h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project a {
+    color: #ffcb47;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: #14efdc;
+}
+
+/* Contact form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact input, .contact textarea {
+    width: 80%;
+    max-width: 300px;
+    padding: 0.5rem;
+    margin-bottom: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.contact button {
+    padding: 0.5rem 1.6rem;
+    border: none;
+    background: #db9c08;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #ffea47;
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
